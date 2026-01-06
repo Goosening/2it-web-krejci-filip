@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napoleon Bonaparte | Císař Francouzů</title>
+    <meta name="description" content="Interaktivní prezentace života a odkazu Napoleona Bonaparta.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">NB</div>
+        <ul class="nav-links">
+            <li><a href="#about">Vzestup</a></li>
+            <li><a href="#timeline">Časová osa</a></li>
+            <li><a href="#legacy">Odkaz</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Napoleon Bonaparte Hero" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Napoleon</h1>
+            <h2 class="hero-subtitle">Císař Francouzů</h2>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </a>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="text-block" data-speed="0.9">
+                <h2 class="section-title">Vzestup k moci</h2>
+                <p>Z korsického dělostřelce se stal vládcem Evropy. Jeho ambice neznala mezí a jeho vojenský génius
+                    přepsal mapy starého kontinentu.</p>
+                <p>Byl to muž, který v chaosu revoluce viděl žebřík k nehynoucí slávě. "Republika, to jsem já," mohl by
+                    říci, než si sám nasadil císařskou korunu.</p>
+            </div>
+            <div class="visual-element spin-seal">
+                <div class="seal-inner">N</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section timeline-section">
+        <h2 class="section-title center-text">Klíčové Okamžiky</h2>
+
+        <div class="timeline-container">
+            <!-- Event 1 -->
+            <div class="timeline-item left">
+                <a href="https://cs.wikipedia.org/wiki/P%C5%99evrat_18._brumairu" target="_blank"
+                    class="timeline-content">
+                    <span class="year">1799</span>
+                    <h3>Převar 18. brumairu</h3>
+                    <p>Napoleon svrhl Direktorium a stal se Prvním konzulem. Konec revoluce, začátek éry Bonaparta.</p>
+                </a>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-item right">
+                <a href="https://cs.wikipedia.org/wiki/Korunovace_Napoleona_Bonaparta" target="_blank"
+                    class="timeline-content">
+                    <span class="year">1804</span>
+                    <h3>Císařská Korunovace</h3>
+                    <p>V katedrále Notre-Dame si sám nasadil korunu. Z konzula se stává císař Napoleon I.</p>
+                </a>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-item left">
+                <a href="https://cs.wikipedia.org/wiki/Bitva_u_Slavkova" target="_blank" class="timeline-content">
+                    <span class="year">1805</span>
+                    <h3>Bitva u Slavkova</h3>
+                    <p>Bitva tří císařů. Jeho největší vítězství, kde drtivě porazil rakouskou a ruskou přesilu.</p>
+                </a>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="timeline-item right">
+                <a href="https://cs.wikipedia.org/wiki/Bitva_u_Waterloo" target="_blank" class="timeline-content">
+                    <span class="year">1815</span>
+                    <h3>Waterloo</h3>
+                    <p>Definitivní pád. "Sto dní" končí porážkou proti vévodovi z Wellingtonu a pruské armádě.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="section legacy-section">
+        <div class="container">
+            <h2 class="section-title">Odkaz</h2>
+            <div class="legacy-grid">
+                <a href="https://cs.wikipedia.org/wiki/Code_civil" target="_blank" class="card">
+                    <h3>Code Civil</h3>
+                    <p>Zákoník, který položil základy moderního evropského práva. Rovnost před zákonem, svoboda
+                        jednotlivce.</p>
+                </a>
+                <a href="https://cs.wikipedia.org/wiki/Napoleonsk%C3%A9_v%C3%A1lky" target="_blank" class="card">
+                    <h3>Strategie</h3>
+                    <p>Principy manévrovací války, které se vyučují na vojenských akademiích dodnes.</p>
+                </a>
+                <a href="https://cs.wikipedia.org/wiki/Evropa" target="_blank" class="card">
+                    <h3>Evropa</h3>
+                    <p>I přes porážku rozšířil ideály revoluce a nacionalismu napříč kontinentem.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#hero">Domů</a>
+            <a href="#about">Vzestup</a>
+            <a href="#timeline">Časová osa</a>
+            <a href="#legacy">Odkaz</a>
+        </div>
+        <p class="quote">"Impossible n'est pas français."</p>
+        <p class="copyright">&copy; 2026 Studentský projekt. Vytvořeno s pomocí AI.</p>
+        <a href="#hero" class="back-to-top">↑ Zpět na začátek</a>
+    </footer>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
