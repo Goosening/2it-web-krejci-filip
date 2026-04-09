@@ -1,0 +1,51 @@
+body {
+    background-color: #1e293b;
+    color: #f8fafc;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e293b;
+    color: #f8fafc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #334155;
+}
+
+.obraz {
+    position: fixed;
+    left: 15cm;
+    top: 14%;
+}
+
+.obraz img {
+    width: 8cm;
+    height: 10cm;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.obraz2 {
+    position: fixed;
+    right: 15cm;
+    top: 14%;
+}
+
+.obraz2 img {
+    width: 8cm;
+    height: 10cm;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
