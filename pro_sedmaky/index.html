@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archimedes' Lab | Heuréka!</title>
+    <meta name="description" content="Nauč se Archimédův zákon hravě! Virtuální laboratoř a hry pro 7. třídu.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <nav class="navbar glass">
+        <div class="logo">🌊 Skibidi<span>Archimedes</span></div>
+        <ul class="nav-links">
+            <li><a href="#theory">Lore</a></li>
+            <li><a href="#lab">Rizz Lab</a></li>
+            <li><a href="#game">Minihry (No Cap)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Brainrot Sidebars (Ad-Heavy Mode) -->
+    <div class="sidebar left-brainrot">
+        <div class="ad-label">REKLAMA</div>
+        <a href="https://www.roblox.com" target="_blank" class="ad-banner glass">
+            <div class="ad-img robux"></div>
+            <div class="ad-text">FREE ROBUX GENERATOR (2026) 💎</div>
+        </a>
+        <a href="https://www.youtube.com/shorts" target="_blank" class="ad-banner glass">
+            <div class="ad-img sigma"></div>
+            <div class="ad-text">Doctors hate this ONE Sigma trick... 🤫</div>
+        </a>
+        <a href="https://www.google.com" target="_blank" class="ad-banner glass">
+            <div class="ad-img sand"></div>
+            <div class="ad-text">Satisfying Sand Slicing ASMR 🏜️</div>
+        </a>
+        <div class="ad-label">SPONSORED</div>
+        <a href="https://www.minecraft.net" target="_blank" class="ad-banner glass">
+            <div class="ad-img slime"></div>
+            <div class="ad-text">How to get UNLIMITED Slime in MC 🧼</div>
+        </a>
+    </div>
+
+    <div class="sidebar right-brainrot">
+        <div class="ad-label">ADVERTISING</div>
+        <a href="https://www.youtube.com/results?search_query=brainrot" target="_blank" class="ad-banner glass">
+            <div class="ad-img hydraulic"></div>
+            <div class="ad-text">Can 1000 degree knife cut a Sigma? 🔥</div>
+        </a>
+        <a href="https://www.roblox.com/games" target="_blank" class="ad-banner glass">
+            <div class="ad-img parkour"></div>
+            <div class="ad-text">Skibidi Toilet Tower Defense (LEGIT) 🚽</div>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="ad-banner glass">
+            <div class="ad-img boss"></div>
+            <div class="ad-text">Level 1 Crook vs Level 99 Boss 🧗</div>
+        </a>
+        <a href="https://www.google.com" target="_blank" class="ad-banner glass">
+            <div class="ad-img mystery"></div>
+            <div class="ad-text">You won't believe what's inside this Crown! 👑</div>
+        </a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">W Sigma Moment! 🛁</h1>
+            <p class="subtitle">Objev tajemství vztlakovýho rizzu v týhle ohio fyzikální labině. Žádnej cap, jen čistej brainrot.</p>
+            <a href="#lab" class="btn-primary">Spustit Grind</a>
+        </div>
+        <div class="hero-visual" id="hero-animation">
+            <!-- Animation will be injected here via JS/CSS -->
+        </div>
+    </header>
+
+    <main>
+        <section id="theory" class="section">
+            <h2 class="section-title">Co se vlastně děje? (Main Story Quest) 💀</h2>
+            <div class="grid">
+                <div class="card glass">
+                    <div class="card-icon">👑</div>
+                    <h3>Lore o koruně</h3>
+                    <p>Archimédes skočil do vany a dostal takovej rizz, že zjistil, že vytlačená voda odpovídá jeho objemu. Absolutní W pro vědu!</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🧪</div>
+                    <h3>Zákon (No Cap)</h3>
+                    <p>Těleso ponořený do kapaliny je nadlehčovaný takovou silou, jako je váha tý vody, co jsi vytlačil. Real talk.</p>
+                </div>
+                <div class="card glass highlight">
+                    <div class="card-icon">🔢</div>
+                    <h3>Sigma Vzoreček</h3>
+                    <div class="formula">F<sub>vz</sub> = V · ρ · g</div>
+                    <p>V = objem (size), ρ = hustota (thickness), g = tíha.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab" class="section">
+            <h2 class="section-title">Rizz Laboratoř ⚗️</h2>
+            <div class="lab-container glass">
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Kapalina (Drip):</label>
+                        <select id="liquid-select">
+                            <option value="1000">Voda (1000 kg/m³)</option>
+                            <option value="1025">Mořská voda (1025 kg/m³)</option>
+                            <option value="900">Olej (900 kg/m³)</option>
+                            <option value="1400">Med (1400 kg/m³)</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Předmět:</label>
+                        <select id="object-select">
+                            <option value="duck">Gumová kachnička 🦆</option>
+                            <option value="crown">Zlatá koruna 👑</option>
+                            <option value="cube">Ocelová kostka 🧊</option>
+                            <option value="wood">Dřevěný špalek 🪵</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Ponoření: <span id="depth-val">50</span>%</label>
+                        <input type="range" id="depth-slider" min="0" max="100" value="50">
+                    </div>
+                </div>
+                <div class="visual-area">
+                    <div class="tank" id="tank">
+                        <div class="water" id="water"></div>
+                        <div class="object" id="simulation-object">
+                            <div class="force-arrow buoyancy" id="arrow-up"><span>F<sub>vz</sub></span></div>
+                            <div class="force-arrow gravity" id="arrow-down"><span>F<sub>g</sub></span></div>
+                        </div>
+                    </div>
+                    <div class="stats glass">
+                        <div class="stat-item">Vztlaková síla: <span id="fvz-display">0</span> N</div>
+                        <div class="stat-item">Tíhová síla: <span id="fg-display">0</span> N</div>
+                        <div class="status-msg" id="status-msg">Plave! ✅</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="section">
+            <h2 class="section-title">Heuréka Quest 🎮</h2>
+            <div class="game-card glass">
+                <div id="game-screen">
+                    <h3>Level 1: Najdi falešnou korunu!</h3>
+                    <p>Máš dvě koruny. Obě vypadají stejně, ale jedna je ze zlata a druhá z levného kovu. Ponoř je do vody a zjisti, která vytlačí jiný objem!</p>
+                    <div class="game-visual">
+                        <!-- Game elements -->
+                        <div class="crown-drop-zone">
+                            <div class="crown gold" draggable="true" id="crown-1">👑 A</div>
+                            <div class="crown sus" draggable="true" id="crown-2">👑 B</div>
+                        </div>
+                        <div class="beakers">
+                            <div class="beaker" id="beaker-1"><div class="water-level"></div></div>
+                        </div>
+                    </div>
+                    <div class="game-controls">
+                        <button class="btn-secondary" onclick="checkGame()">Ověřit výsledek</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Archimedes Lab - Pro generaci Alpha 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
